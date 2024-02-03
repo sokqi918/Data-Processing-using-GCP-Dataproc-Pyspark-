@@ -7,3 +7,7 @@ Google Cloud Platform's range of data processing tools includes Cloud Dataflow a
 
 ### Process Flow: 
 The implementation of the data processing part involves using Google Cloud Dataproc to manage Spark and Hadoop services and submitting a Pyspark job to perform specific data processing tasks. Below is a step-by-step outline of the data processing implementation: 
+
+**1. Dataproc** 
+Setup Spark and Hadoop Cluster – create a datarpoc cluster with the necessary Spark and Hadoop configurations to handle our data processing tasks. “cluster-dataprocessing” has been created in Dataproc. 
+![Updated Image](https://github.com/sokqi918/Data-Processing-using-GCP-Dataproc-Pyspark-/blob/main/Photo/dataproc.jpg)
