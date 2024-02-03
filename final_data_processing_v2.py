@@ -6,9 +6,9 @@ from pyspark.sql.types import StringType
 spark = SparkSession.builder.appName("CurrencyAverage").getOrCreate()
 
 # Replace 'your_bucket' with the actual GCS bucket name
-gcs_bucket = "exchangrate"
-file_path = f"gs://{gcs_bucket}/exchange-rates.csv"
-output_path = f"gs://{gcs_bucket}/new_output_path2/average_rates"
+gcs_bucket = "your_bucket"
+file_path = f"gs://{gcs_bucket}/yourfile.csv"
+output_path = f"gs://{gcs_bucket}/new_output_path2/outputname"
 
 # Read data from GCS
 df = spark.read.csv(file_path, header=True, inferSchema=True)
